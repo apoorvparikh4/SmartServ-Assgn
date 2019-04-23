@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="products.json"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading">Products</h1>
+            <div class="filter">
+                Subcategory
+                <select class="subcategory-dropdown" onchange="changeSubcategory(this.value)">
+                    <option value="All" selected>All</option>
+                    <option value="tablet">tablet</option>
+                    <option value="smartWatches">smart-watches</option>
+                    <option value="mobile">mobile</option>
+                    <option value="fitnessTracker">fitness-tracker</option>
+                </select>
+            </div>
+            <div class="pagination">
+                <button class="pagination-last" onclick="last()">Last</button>
+                <button class="pagination-next" onclick="next()">Next</button>
+                <button class="pagination-previous" onclick="previous()">Previous</button>
+                <button class="pagination-first" onclick="first()">First</button>
+                <div class="show-entries">
+                    Show
+                    <select class="show-entries-dropdown" onchange="changeEntries(this.value)">
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </select>
+                    Entries
+                </div>
+                <div class="show-entries-text">
+                    Showing 1-10 of 1000
+                </div>
+            </div>
+            <div class="table-container"></div>
+            <div class="pagination">
+                <button class="pagination-last" onclick="last()">Last</button>
+                <button class="pagination-next" onclick="next()">Next</button>
+                <button class="pagination-previous" onclick="previous()">Previous</button>
+                <button class="pagination-first" onclick="first()">First</button>
+                <div class="show-entries">
+                    Show
+                    <select class="show-entries-dropdown" onchange="changeEntries(this.value)">
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </select>
+                    Entries
+                </div>
+                <div class="show-entries-text">
+                    Showing 1-10 of 1000
+                </div>
+            </div>
+        <div>
+    </body>
+</html>

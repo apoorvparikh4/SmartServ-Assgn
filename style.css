@@ -1,0 +1,14 @@
+.container { min-width: 700px; }
+.heading { text-align: center; }
+.filter { margin: 0px 0px 20px 20px; border:1px solid;padding:10px; width:220px; }
+.pagination { margin:0px 20px 10px 20px; }
+.pagination-first, .pagination-previous, .pagination-next { float:right; }
+.pagination-last { float:right; margin-right: 15px; }
+.show-entries { margin-left:15px; float:left; }
+.show-entries-text { text-align: center; }
+.table-container { margin: 10px 20px 10px 20px; clear:both; }
+tbody tr:nth-child(odd) { background-color: #f2f2f2; }
+td, th { border: 1px solid; padding: 5px; }
+table { border-collapse:collapse; width:100% }
+.subcategory,.title { text-align: left; }
+.price, .popularity { text-align: right; }
